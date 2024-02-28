@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import { Socials } from "@/constants";
+import Link from "next/link";
 
 export const Navbar = () => {
   return (
@@ -16,7 +18,36 @@ export const Navbar = () => {
             height={55}
             className="cursor-pointer hover:animate-slowspin"
           />
+          <span className="font-bold ml-[10px] hidden md:block text-gray-300">
+            James Dev
+          </span>
         </a>
+        <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-20">
+          <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
+            <a href="#about-me" className="cursor-pointer">
+              About me
+            </a>
+            <a href="#skills" className="cursor-pointer">
+              Skills
+            </a>
+            <a href="#projects" className="cursor-pointer">
+              Projects
+            </a>
+          </div>
+        </div>
+        <div className="flex flex-row gap-5">
+          {Socials.map((social) => (
+            <Link key={social.name} passHref href={social.link}>
+              <Image
+                src={social.src}
+                alt={social.name}
+                key={social.name}
+                width={40}
+                height={40}
+              />
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );
