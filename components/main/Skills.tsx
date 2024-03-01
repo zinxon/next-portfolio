@@ -13,10 +13,32 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden pb-80 py-20"
+      className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden"
       style={{ transform: "scale(0.9" }}
     >
+      {/* // 13, 10, 8, 4, 1 = 36
+      aws,nextjs,react,vue,html,css,javascript,typescript,tailwind,nodejs,express,java,python
+      gcp,flutter,dart,flask,php,mongodb,mysql,postgres,firebase,docker
+      kubernetes,terraform,github,gitlab,githubactions,git,nginx,redis
+      postman,bash,vscode,figma
+      bun */}
+
       <SkillText />
+      {/* <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+        <img src="https://skillicons.dev/icons?i=aws,nextjs,react,vue,html,css,javascript,typescript,tailwind,nodejs,express,java,python" />
+      </div>
+      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+        <img src="https://skillicons.dev/icons?i=gcp,flutter,dart,flask,php,mongodb,mysql,postgres,firebase,docker" />
+      </div>
+      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+        <img src="https://skillicons.dev/icons?i=kubernetes,terraform,github,gitlab,githubactions,git,nginx,redis" />
+      </div>
+      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+        <img src="https://skillicons.dev/icons?i=postman,bash,vscode,figma" />
+      </div>
+      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+        <img src="https://skillicons.dev/icons?i=bun" />
+      </div> */}
 
       <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
         {Skill_data.map((image, index) => (
