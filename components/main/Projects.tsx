@@ -10,7 +10,7 @@ const Projects = () => {
       <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
         My Projects
       </h1>
-      <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
+      <div className="h-full w-full grid grid-cols-3 md:flex-row gap-10 px-10">
         <ProjectCard
           src="/TradingHub.png"
           title="Trading Hub"
@@ -19,12 +19,22 @@ const Projects = () => {
         <ProjectCard
           src="/Decarbon.png"
           title="Decarbon"
-          description="Tech Stack: Flutter, ExpressJS, Mysql, AWS Lambda, AWS API Gateway, AWS Cognito"
+          description="A Carbon-base Coupon Platform for IOS & Android. Tech Stack: Flutter, ExpressJS, Mysql, AWS Lambda, AWS API Gateway, AWS Cognito"
+        />
+        <ProjectCard
+          src="/Zirkol.png"
+          title="Zirkol"
+          description="A E-Commerce Cross-Platform Mobile Application. Tech Stack: Flutter, NestJS, AWS EC2, Mysql, Elastic Search"
+        />
+        <ProjectCard
+          src="/Fanchat.png"
+          title="Fanchat"
+          description="Hong Kong Stock Price Prediction AI Chatbot. Tech Stack: Flutter, Python, Keras, Flask, Firebase, Dialogflow"
         />
         <ProjectCard
           src="/SpaceWebsite.png"
           title="NextJS Portfolio Website"
-          description="Tech Stack: NextJS, Github Actions, Vercel"
+          description="James's Personal Portfolio Website. Tech Stack: NextJS, Github Actions, Vercel"
         />
       </div>
     </div>
