@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import StarsCanvas from "@/components/main/StarBackground";
 import { Navbar } from "@/components/main/Navbar";
 import "./globals.css";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -45,6 +46,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <StarsCanvas />
+        <GoogleTagManager gtmId="GTM-P7FJFWQD" />
       </body>
     </html>
   );
