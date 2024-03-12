@@ -17,14 +17,19 @@ const Projects = () => {
           description="A Crypto Asset Management and Trading Platform. Tech Stack: VueJS, ExpressJS, MongoDB"
         />
         <ProjectCard
-          src="/Decarbon.png"
-          title="Decarbon"
-          description="A Carbon-base Coupon Platform for IOS & Android. Tech Stack: Flutter, ExpressJS, Mysql, AWS Lambda, AWS API Gateway, AWS Cognito"
-        />
-        <ProjectCard
           src="/Zirkol.png"
           title="Zirkol"
           description="A E-Commerce Cross-Platform Mobile Application. Tech Stack: Flutter, NestJS, AWS EC2, Mysql, Elastic Search"
+        />
+        <ProjectCard
+          src="/JarvixPay.png"
+          title="Jarvix Pay"
+          description="Intelligent one-stop Payment Application. Tech Stack: VueJS, Ionic, Typescript, ExpressJS, Mysql, AWS EC2, AWS ELB, AWS S3, AWS RDS"
+        />
+        <ProjectCard
+          src="/Decarbon.png"
+          title="Decarbon"
+          description="A Carbon-base Coupon Platform for IOS & Android. Tech Stack: Flutter, ExpressJS, Mysql, AWS Lambda, AWS API Gateway, AWS Cognito"
         />
         <ProjectCard
           src="/Fanchat.png"
