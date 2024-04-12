@@ -1,7 +1,7 @@
 import {
   Backend_skill,
   Frontend_skill,
-  Full_stack,
+  DevOps,
   Other_skill,
   Skill_data,
 } from "@/constants";
@@ -75,7 +75,7 @@ const Skills = () => {
         ))}
       </div>
       <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
-        {Full_stack.map((image, index) => (
+        {DevOps.map((image, index) => (
           <SkillDataProvider
             key={index}
             src={image.Image}

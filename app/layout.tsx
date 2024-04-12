@@ -4,7 +4,7 @@ import StarsCanvas from "@/components/main/StarBackground";
 import { Navbar } from "@/components/main/Navbar";
 import "./globals.css";
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
-
+import { SpeedInsights } from "@vercel/speed-insights/next";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -48,6 +48,7 @@ export default function RootLayout({
         <StarsCanvas />
         <GoogleTagManager gtmId="GTM-P7FJFWQD" />
         <GoogleAnalytics gaId="G-YP3S8BHED0" />
+        <SpeedInsights />
       </body>
     </html>
   );
