@@ -1,4 +1,4 @@
-![logo](https://github.com/zinxon/next-portfolio/blob/main/public/SpaceWebsite.png)
+<img width="1439" alt="Screenshot 2024-04-14 at 5 08 13 PM" src="https://github.com/zinxon/next-portfolio/assets/24634403/7f49f1ad-613b-4c23-b801-d45220301a69">
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
