@@ -14,7 +14,7 @@ export const HeroContent = () => {
     <motion.div
       initial="Hidden"
       animate="visible"
-      className="flex flex-row items-center justify-center px-20 mt-40 w-full z-[20]"
+      className="flex flex-col md:flex-row items-center justify-center px-4 md:px-20 mt-20 md:mt-40 w-full z-[20]"
     >
       <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
         <motion.div
@@ -28,7 +28,7 @@ export const HeroContent = () => {
         </motion.div>
         <motion.div
           variants={slideInFromLeft(0.5)}
-          className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
+          className="flex flex-col gap-6 mt-6 text-4xl md:text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
         >
           <span>
             Professional in
@@ -56,13 +56,14 @@ export const HeroContent = () => {
       </div>
       <motion.div
         variants={slideInFromRight(0.8)}
-        className="w-full h-full flex justify-center items-center"
+        className="w-full h-full flex justify-center items-center mt-10 md:mt-0"
       >
         <Image
           src="/mainIconsdark.svg"
           alt="work icons"
           height={650}
           width={650}
+          className="w-full max-w-[650px]"
         />
       </motion.div>
     </motion.div>
