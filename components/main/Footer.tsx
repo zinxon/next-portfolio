@@ -12,34 +12,34 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="w-full h-full bg-transparent text-gray-200 shadow-lg p-[15px]">
+    <div className="w-full h-full bg-transparent text-gray-200 shadow-lg p-[15px] relative z-[9997]">
       <div className="w-full flex flex-col items-center justify-center m-auto">
         <div className="w-full h-full flex flex-col md:flex-row items-center justify-around flex-wrap gap-5 md:gap-0">
           <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
             <div className="font-bold text-[16px]">Community</div>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
+            <a
+              href="https://github.com/zinxon"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-row items-center my-[15px] cursor-pointer hover:text-purple-400 transition-colors duration-300"
+              style={{ position: "relative", zIndex: 9998 }}
+            >
               <RxGithubLogo />
-              <a
-                href="https://github.com/zinxon"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="text-[15px] ml-[6px]">Github</span>
-              </a>
-            </p>
+              <span className="text-[15px] ml-[6px]">Github</span>
+            </a>
           </div>
           <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
             <div className="font-bold text-[16px]">Social Media</div>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
+            <a
+              href="https://linkedin.com/in/shingson/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-row items-center my-[15px] cursor-pointer hover:text-purple-400 transition-colors duration-300"
+              style={{ position: "relative", zIndex: 9998 }}
+            >
               <RxLinkedinLogo />
-              <a
-                href="https://linkedin.com/in/shingson/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="text-[15px] ml-[6px]">Linkedin</span>
-              </a>
-            </p>
+              <span className="text-[15px] ml-[6px]">Linkedin</span>
+            </a>
           </div>
           <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
             <div className="font-bold text-[16px]">About</div>
