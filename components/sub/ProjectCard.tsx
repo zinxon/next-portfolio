@@ -11,18 +11,15 @@ interface Props {
 }
 
 const ProjectCard = ({ src, title, description, link }: Props) => {
-  const handleClick = (e: React.MouseEvent) => {
-    console.log("Card clicked!", title);
-    // Don't prevent default - let the link work
+  const handleClick = () => {
+    window.open(link, "_blank");
   };
 
   return (
-    <a
-      href={link}
-      target="_blank"
-      rel="noopener noreferrer"
+    <div
       onClick={handleClick}
-      className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61] hover:shadow-xl hover:border-purple-500 transition-all duration-300 transform hover:scale-105 cursor-pointer block z-30"
+      className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61] hover:shadow-xl hover:border-purple-500 transition-all duration-300 transform hover:scale-105 cursor-pointer block bg-gray-800"
+      style={{ position: "relative", zIndex: 9999 }}
     >
       <Image
         src={src}
@@ -36,7 +33,7 @@ const ProjectCard = ({ src, title, description, link }: Props) => {
         <h1 className="text-2xl font-semibold text-white">{title}</h1>
         <p className="mt-2 text-gray-300">{description}</p>
       </div>
-    </a>
+    </div>
   );
 };
 

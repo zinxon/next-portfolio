@@ -4,8 +4,9 @@ import ProjectCard from "../sub/ProjectCard";
 const Projects = () => {
   return (
     <div
-      className="flex flex-col items-center justify-center py-10 relative z-10"
+      className="flex flex-col items-center justify-center py-10"
       id="projects"
+      style={{ position: "relative", zIndex: 9998 }}
     >
       <h1 className="text-[32px] md:text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-10 md:py-20">
         My Projects
