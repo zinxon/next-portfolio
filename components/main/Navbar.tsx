@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import { Socials } from "@/constants";
-import Link from "next/link";
 
 export const Navbar = () => {
   return (
@@ -37,15 +36,21 @@ export const Navbar = () => {
         </div>
         <div className="flex flex-row gap-5">
           {Socials.map((social) => (
-            <Link key={social.name} passHref href={social.link}>
+            <a
+              key={social.name}
+              href={social.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:scale-110 transition-transform duration-300"
+              style={{ position: "relative", zIndex: 9999 }}
+            >
               <Image
                 src={social.src}
                 alt={social.name}
-                key={social.name}
                 width={40}
                 height={40}
               />
-            </Link>
+            </a>
           ))}
         </div>
       </div>

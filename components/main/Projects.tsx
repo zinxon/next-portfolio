@@ -13,6 +13,26 @@ const Projects = () => {
       </h1>
       <div className="h-full w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-4 md:px-10">
         <ProjectCard
+          src="/Towber.png"
+          title="Towber 拖吧"
+          description={
+            <>
+              <a
+                href="https://www.towber.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-purple-400 hover:text-purple-300 underline"
+              >
+                Towber
+              </a>
+              {
+                " is the largest Chinese towing team in the Greater Toronto Area, proficient in Mandarin, Cantonese, and English, providing 24-hour towing services. Tech Stack: NextJS, TailwindCSS, ShadcnUI, Typescript, Postgres, Supabase"
+              }
+            </>
+          }
+          link="https://www.towber.app/"
+        />
+        <ProjectCard
           src="/TradingHub.png"
           title="Trading Hub"
           description="A Crypto Asset Management and Trading Platform. Tech Stack: VueJS, ExpressJS, MongoDB"
