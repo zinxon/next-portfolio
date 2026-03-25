@@ -50,7 +50,7 @@ const Footer = () => {
         </div>
 
         <div className="mb-[20px] text-[15px] text-center mt-5">
-          &copy; James Dev 2024 All rights reserved
+          &copy; James Dev 2026 All rights reserved
         </div>
       </div>
     </div>
